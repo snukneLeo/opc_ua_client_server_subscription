@@ -19,13 +19,13 @@ set(SERVER_TEST "server_test.c") #SORGENTI
 add_executable(SERVER ${SERVER_TEST}) #NOME ESEGUIBILE
 #add_executable(FIND ${SEARCH}) #NOME ESEGUIBILE
 #add_executable(LOOP ${LOOP_CLIENT}) #NOME ESEGUIBILE
-add_executable(C1 ${CLIENT_SUB1}) #NOME ESEGUIBILE
-add_executable(C2 ${CLIENT_SUB2}) #NOME ESEGUIBILE
+add_executable(CLIENT1 ${CLIENT_SUB1}) #NOME ESEGUIBILE
+add_executable(CLIENT2 ${CLIENT_SUB2}) #NOME ESEGUIBILE
 
 #target_link_libraries(CLIENT open62541)
 target_link_libraries(SERVER open62541) 
 #target_link_libraries(FIND open62541)
 #target_link_libraries(LOOP open62541)
-target_link_libraries(C1 open62541)
-target_link_libraries(C2 open62541)
+target_link_libraries(CLIENT1 open62541)
+target_link_libraries(CLIENT2 open62541)
 
